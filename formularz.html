@@ -13,23 +13,33 @@
             <section>
                 <form action="http://helion.pl/pliki/prsti2/09/contest.php" method="post">
                     <p>Podstawowe dane</p>
-                    <label>Imię i nazwisko:<input type="text" name="name"></label></br>
-                    <label>E-mail:<input type="email" name="email"></label></br>
-                    <label>Telefon:<input type="tel" name="phone"></label></br>
+                    <ul>
+                        <li><label>Imię i nazwisko:<input type="text" name="name"></label></br></li>
+                        <li><label>E-mail:<input type="email" name="email"></label></br></li>
+                        <li><label>Telefon:<input type="tel" name="phone"></label></br></li>
 
-                    <p>Moje buty są TAKIE stare...</br>
-                        <textarea name="story" placeholder="Nie więcej niż 300 znaków" rows="5" cols="50"></textarea>
-                    </p>
+                        <li>Moje buty są TAKIE stare...</br>
+                            <textarea name="story" placeholder="Nie więcej niż 300 znaków" rows="5" cols="50"></textarea>
+                        </li>>
+                    </ul>    
 
-                    <h2>Zaprojektuj własne trampki:</h2>
+                    <strong>Zaprojektuj własne trampki:</strong>
                         <p>Własny projekt butów</p>
                     <dl>
                         <dt>Kolor(wybierz jeden)</dt>
-                        <dd>()czerwony</dd>
-                        <dd>()niebieski</dd>
-                        <dd>()czarny</dd>
-                        <dd>()srebrny</dd>
+                        <dd><input type="radio" value="red" name="color">czerwony</dd>
+                        <dd><input type="radio" value="blue" name="color">niebieski</dd>
+                        <dd><input type="radio" value="black" name="color">czarny</dd>
+                        <dd><input type="radio" value="silver" name="color">srebrny</dd>
+                    </br>
+                        <dt>Opcje (moższ wybrać kilka):</dt>
+                        <dd><input type="checkbox" value="shiny" name="features[]">Błyszczące sznurówki</dd>
+                        <dd><input type="checkbox" value="metal" checked name="features[]">Metalowe logo</dd>
+                        <dd><input type="checkbox" value="light" name="features[]">Świecące podzeszwy</dd>
+                        <dd><input type="checkbox" value="mp3" name="features[]">Odtwarzanie MP3</dd>
                     </dl>
+
+                    
                     <p><input type="submit" value="Podrasuj swoje buty!"><input type="reset"></p>            
                 </form>
             </section>
